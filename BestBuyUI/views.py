@@ -5,5 +5,3 @@ from django.http import HttpResponse
 def home(request):
     return render(request, 'BestBuyUI/home.html')
 
-def about(request):
-    return HttpResponse('<h1>about</h1>')
