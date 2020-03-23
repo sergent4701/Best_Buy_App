@@ -8,5 +8,5 @@ class Users(models.Model):
     password = models.TextField()
 
 
-class Entry(models.Model):
-    user = models.ForeignKey(Users, on_delete=models.SET_NULL)
+class Entries(models.Model):
+    user = models.ForeignKey(Users, null=True, on_delete=models.SET_NULL)
