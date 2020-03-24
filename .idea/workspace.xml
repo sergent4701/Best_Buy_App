@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b78dcd32-56b7-4818-846d-9fd388cba624" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Best_Buy_App/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Best_Buy_App/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Best_Buy_App/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Best_Buy_App/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/0002_auto_20200323_2241.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/migrations/0002_auto_20200323_2241.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/templates/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/templates/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoginSystem/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="b78dcd32-56b7-4818-846d-9fd388cba624" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,16 +10,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LoginSystem/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-end-line="5" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LoginSystem/templates/login/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -85,6 +76,12 @@
               <item name="Best_Buy_App" type="b2602c69:ProjectViewProjectNode" />
               <item name="Best_Buy_App" type="462c0819:PsiDirectoryNode" />
               <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Best_Buy_App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Best_Buy_App" type="462c0819:PsiDirectoryNode" />
+              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,12 +146,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="228" y="27" width="1173" height="674" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32928944" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32928944" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32928944" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -326,16 +322,6 @@
     <entry file="file://$PROJECT_DIR$/BestBuyUI/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Best_Buy_App/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LoginSystem/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -360,15 +346,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Best_Buy_App/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LoginSystem/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-end-line="5" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoginSystem/templates/login/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
