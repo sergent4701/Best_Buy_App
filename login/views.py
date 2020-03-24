@@ -7,3 +7,6 @@ def login(request):
     return render(request, 'login/login.html')
 
 
+def SignUp(request):
+    return render(request, 'login/SignUp.html')
+
