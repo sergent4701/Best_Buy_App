@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('BestBuyUI', '0001_initial'),
+        ('login', '0001_initial'),
     ]
 
     operations = [
