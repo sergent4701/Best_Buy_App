@@ -22,3 +22,4 @@ class Goal(models.Model):
     geekSquadSolutions = models.DecimalField(max_digits=9, decimal_places=2)
     officeAttach = models.IntegerField()
     dateCreated = models.DateTimeField(default=timezone.now)
+
