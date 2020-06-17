@@ -18,7 +18,7 @@ from django.urls import path, include
 from LoginSystem import views
 
 urlpatterns = [
+    path('', include("django.contrib.auth.urls")),
     path('admin/', admin.site.urls),
     path('signup/', views.signup, name="Sign Up"),
-    path('', include("django.contrib.auth.urls")),
 ]

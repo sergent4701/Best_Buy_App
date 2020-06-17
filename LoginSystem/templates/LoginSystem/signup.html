@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Signup Page</title>
-</head>
+{% extends 'main/base.html' %}
+
+{% block content %}
 <body>
 	{%load crispy_forms_tags%}
 	<form method='POST' class = "form-group">
@@ -10,6 +8,5 @@
 		{{ form|crispy }}
 		<button type="submit" class = "btn btn-success">Sign Up</button>
 	</form>
-
 </body>
-</html>
+{% endblock %}

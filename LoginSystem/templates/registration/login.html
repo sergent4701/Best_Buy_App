@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
-<head>
-<title>Login Page</title>
-</head>
+{% extends 'main/base.html' %}
+
+{% block content %}
 <body>
 	{% load crispy_forms_tags %}
 	<form method="POST" class="form-group">
@@ -13,4 +11,4 @@
 	</form>
 
 </body>
-</html>
+{% endblock %}
