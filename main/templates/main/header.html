@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<body>
+
+<style>
+#header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#header li {
+  display: inline;
+}
+</style>
+
+<ul id="header">
+    <li><a href="{% url 'Dashboard' %}">Dashboard</a></li>
+    <li><a href="{% url 'New Entry' %}">Add Entry</a></li>
+    <li><a href="{% url 'User List' %}">User List</a></li>
+    <li><a href="{% url 'Login' %}">Login</a></li>
+    <li><a href="{% url 'Sign Up' %}">Sign Up</a></li>
+    <li><a href="{% url 'Logout' %}?next=/login">Logout</a></li>
+
+
+</ul>
+
+         {% block content2 %}
+            {% endblock %}
+
+</body>
+{% endblock %}

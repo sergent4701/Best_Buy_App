@@ -7,10 +7,11 @@ def signup(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
-        return redirect('LoginSystem/login.html')
+        return redirect('Login')
     else:
         form = SignUpForm()
     return render(request, "LoginSystem/signup.html", {"form": form})
 
 
-
+def redirect_login(request):
+    return redirect("login/")

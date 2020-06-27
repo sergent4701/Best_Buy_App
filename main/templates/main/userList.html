@@ -1,0 +1,11 @@
+{% extends 'main/header.html' %}
+
+{% block content2 %}
+<ul>
+{% for user in users %}
+
+    <li><a href="{% url 'User Entry List' pk=user.pk %}">{{user.username}}</a></li>
+
+{% endfor %}
+</ul>
+{% endblock %}
