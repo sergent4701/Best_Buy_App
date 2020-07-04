@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.utils import timezone
 from .forms import newEntryForm
-from .models import Entry
+from .models import Entry, User
 from django.http import Http404
 
 
@@ -21,7 +21,7 @@ def newEntry(request):
             entry.employee = request.user
             entry.dateCreated = timezone.now()
             entry.save()
-            #return redirect('Dashboard')
+            return redirect('Dashboard')
     else:
         form = newEntryForm()
     return render(request, 'main/newEntry.html', {'form': form})
