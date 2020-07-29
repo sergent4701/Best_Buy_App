@@ -32,27 +32,20 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    MANAGER = 'MA'
-    PCHO = 'PC'
-    APPLIANCES = 'AP'
-    HOME_THEATER = 'HT'
-    MOBILE = 'MO'
-    CONNECTED_HOME = 'CH'
-    FRONT_LANE = "FL"
     employee_type_choices = [
-        (MANAGER, 'Manager'),
-        (PCHO, 'PCHO'),
-        (APPLIANCES, 'Appliances'),
-        (HOME_THEATER, 'Home Theater'),
-        (MOBILE, 'Mobile'),
-        (CONNECTED_HOME, 'Connected Home'),
-        (FRONT_LANE, 'Front Lane'),
+        ('MA', 'Manager'),
+        ('PC', 'PCHO'),
+        ('AP', 'Appliances'),
+        ('HT', 'Home Theater'),
+        ('MO', 'Mobile'),
+        ('CH', 'Connected Home'),
+        ('FL', 'Front Lanes'),
     ]
     numeric = RegexValidator(r'^[0-9]*$', 'Only numeric characters are allowed.')
 
     username = models.CharField(max_length=7, blank=True, null=True, validators=[numeric], unique=True)
     full_name = models.CharField(max_length=255)
-    employee_type = models.CharField(max_length=2, choices=employee_type_choices, default=MANAGER)
+    employee_type = models.CharField(max_length=2, choices=employee_type_choices, default='MA')
     date_joined = models.DateTimeField(verbose_name='date joined', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='last login', auto_now=True)
     is_active = models.BooleanField(default=True)
