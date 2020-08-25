@@ -7,7 +7,10 @@ from django.http import Http404
 
 # Create your views here.
 def dashboard(request):
-    return render(request, "main/dashboard.html")
+    if request.user.employee_type == "MA":
+        return render(request, "main/managerDashboard.html")
+    else:
+        return render(request, "main/dashboard.html")
 
 
 def newEntry(request):
