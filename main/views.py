@@ -7,6 +7,8 @@ from django.http import Http404
 
 # Create your views here.
 def dashboard(request):
+    if not request.user.is_authenticated:
+        raise Http404
     if request.user.employee_type == "MA":
         return render(request, "main/managerDashboard.html")
     else:
@@ -52,3 +54,9 @@ def displayEntry(request, pk):
     else:
         form = newEntryForm(instance=entry)
     return render(request, 'main/entry.html', {'form': form})
+
+def addEmployee(request):
+    if not request.user.is_authenticated:
+        raise Http404
+    return render(request, "main/addEmployee.html")
+

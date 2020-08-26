@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% extends 'main/base.html' %}
+
+{% block content %}
+<body>
+
+<style>
+#header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#header li {
+  display: inline;
+}
+</style>
+
+<ul id="header">
+    <li><a href="{% url 'Dashboard' %}">Dashboard</a></li>
+    <li><a href="{% url 'AddEmployee' %}">Add Employee</a></li>
+    <li><a href="{% url 'Logout' %}?next=/login">Logout</a></li>
+</ul>
+
+         {% block content2 %}
+            {% endblock %}
+
+</body>
+{% endblock %}</title>
+</head>
+<body>
+
+</body>
+</html>

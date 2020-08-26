@@ -28,6 +28,7 @@ urlpatterns = [
     path("logout/", LogoutView.as_view(), name="Logout"),
 
     path('dashboard/', mainViews.dashboard, name="Dashboard"),
+    path('addEmployee/', mainViews.addEmployee, name="AddEmployee"),
     path('entry/new/', mainViews.newEntry, name='New Entry'),
     path('entry/<int:pk>/', mainViews.displayEntry, name='Entry'),
     path('user_list/', mainViews.listUsers, name='User List'),

@@ -1,0 +1,32 @@
+body{
+margin:0;
+padding:0;
+border:0;
+}
+
+#header {
+background-color: #0234B1;
+width:100%;
+height:50px;
+marin:0;
+padding:0;
+border:0;
+}
+#header li{
+margin-top:16px;
+margin-left:270px;
+float:left;
+}
+#header li a{
+color: white;
+text-decoration: none;
+}
+
+#header li a:hover{
+opacity:0.7;
+}
+
+#searchForm input{
+    height:25px;
+    width:700px;
+}
